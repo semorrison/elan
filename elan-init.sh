@@ -360,7 +360,7 @@ get_architecture() {
         esac
     fi
 
-    # Detect armv7 but without the CPU features Rust needs in that build,
+    # Detect armv7 but without the CPU features Lean needs in that build,
     # and fall back to arm.
     # See https://github.com/rust-lang/rustup.rs/issues/587.
     if [ "$_ostype" = "unknown-linux-gnueabihf" ] && [ "$_cputype" = armv7 ]; then
